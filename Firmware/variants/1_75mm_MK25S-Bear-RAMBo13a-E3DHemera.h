@@ -55,16 +55,16 @@
 #define INVERT_E1_DIR 1    // for direct drive extruder v9 set to 1, for geared extruder set to 0
 #define INVERT_E2_DIR 1    // for direct drive extruder v9 set to 1, for geared extruder set to 0
 
-// Home position (these settings are ignored since MANUAL_HOME_POSITIONS is not defined)
+// Home position
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS -2.2
 #define MANUAL_Z_HOME_POS 0.2
 
 // Travel limits after homing
-#define X_MAX_POS 240 // bear hemera (prusa default = 250)
-#define X_MIN_POS -12 // bear hemera (prusa default = 0)
-#define Y_MAX_POS 195 // bear hemera (prusa default = 210)
-#define Y_MIN_POS -12 // bear hemera (prusa default = -4)
+#define X_MAX_POS 250
+#define X_MIN_POS 0
+#define Y_MAX_POS 210
+#define Y_MIN_POS -4
 #define Z_MAX_POS 210
 #define Z_MIN_POS 0.15
 
@@ -112,7 +112,7 @@
 #define WATCHDOG
 
 // Fan check
-//#define FANCHECK // bear hemera (prusa default = uncommented)
+#define FANCHECK
 
 // Safety timer
 #define SAFETYTIMER
@@ -120,8 +120,8 @@
 #define FARM_DEFAULT_SAFETYTIMER_TIME_ms (45*60*1000ul)
 
 // Filament sensor
-//#define FILAMENT_SENSOR // bear hemera (prusa default = uncommented)
-//#define IR_SENSOR // bear hemera (prusa default = uncommented)
+#define FILAMENT_SENSOR
+#define IR_SENSOR
 
 
 #define DEBUG_DCODE3
@@ -505,7 +505,7 @@
 #define MMU_REQUIRED_FW_BUILDNR 132
 #define MMU_FORCE_STEALTH_MODE
 #define MMU_DEBUG //print communication between MMU2 and printer on serial
-//#define MMU_HAS_CUTTER
+#define MMU_HAS_CUTTER
 
 // This is experimental feature requested by our test department.
 // There is no known use for ordinary user. If enabled by this macro
