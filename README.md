@@ -14,9 +14,9 @@
 
 
 ### What the heck is a BearMera?!
-Generally speaking, it's Grégoire Saunier's redesigned x-axis and extruder for Prusa i3-based 3D printers combined with E3D-Online's Hemera extrusion system.  In my case specifically, it's a built-from-scratch Prusa i3 MK2.5S on Grégoire's Prusa i3 Bear Upgrade frame.  
+Generally speaking, it's Grégoire Saunier's redesigned x-axis and extruder for Prusa i3-based 3D printers (BearExxa) combined with E3D-Online's Hemera extrusion system.  In my case specifically, it's a built-from-scratch Prusa i3 MK2.5S on Grégoire's Prusa i3 Bear Upgrade frame.  
 
-* Bear Extruder and X-Axis https://github.com/gregsaun/bear_extruder_and_x_axis
+* BearExxa (Extruder and X-Axis) https://github.com/gregsaun/bear_extruder_and_x_axis
 * Bear Upgrade (Frame) https://github.com/gregsaun/prusa_i3_bear_upgrade  
 * E3D-Online Hemera extrusion system https://e3d-online.com/e3d-hemera-175-kit
 
@@ -26,11 +26,11 @@ _Myself_, primarily.  Others who want to modify their printer to work with the B
 
 
 ### Where are the .hex files?
-**Compiled .hex firmware files are not, and will not be provided**.  Using modified firmware on your 3D printer can be dangerous, particularly if that firmware is not intended for your specific printer's geometry and hardware configuration.  Given that this firmware was built for an uncommon printer configuration (Bear 2.1-ish MK2.5S, Bear X-Axis 0.70-alpha, BearMera Extruder), it is unlikely that it will work as-is for the vast majority of people.  To use the modified firmware, you will have to build it from source yourself.
+**Compiled .hex firmware files are not, and will not be provided**.  Using modified firmware on your 3D printer can be dangerous, particularly if that firmware is not intended for your specific printer's geometry and hardware configuration.  Given that this firmware was built for an uncommon printer configuration (Bear 2.1-ish MK2.5S, BearExxa 1.0.0, BearMera Extruder), it is unlikely that it will work as-is for the vast majority of people.  To use the modified firmware, you will have to build it from source yourself.
 
 
 ### How do I build the firmware from source?
-Prusa Research provides build instructions in their GitHub repository [here](https://github.com/prusa3d/BearMera-Firmware).  I personally build the source using the provided `PF-build.sh` script in a Ubuntu docker container on a Windows 10 64-bit machine.
+Prusa Research provides build instructions in their GitHub repository [here](https://github.com/prusa3d/Prusa-Firmware).  I personally build the source using the provided `PF-build.sh` script in a Ubuntu docker container on a Windows 10 64-bit machine.
 
 
 ### What parts of the firmware have been modified?
